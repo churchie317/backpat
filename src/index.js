@@ -8,7 +8,7 @@ exports.rootDir = process.cwd() + '/';
 exports.dependencies = {};
 exports.event = new EventEmitter();
 
-exports.backpat = function(callback) {
+exports.backpat = function(callback: Function) {
   if (typeof callback !== 'function') {
     throw new TypeError('backpat should accept type function as input parameter');
   }
